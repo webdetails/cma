@@ -1,4 +1,3 @@
 cma
 ===
-
-Community Mondrian Analyzer
+not defined

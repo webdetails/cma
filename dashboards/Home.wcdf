@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdf>
+        <title>Home</title>
+        <author></author>
+        <description>CMA Home Dashboard</description>
+        <icon/>
+		<style>cpk - (CMA)</style>
+<rendererType>blueprint</rendererType><widget>false</widget></cdf>

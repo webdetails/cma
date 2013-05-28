@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin title="cma" loader="DEFAULT">
+	<lifecycle-listener class="pt.webdetails.cpk.CpkLifecycleListener"/>
+	<static-paths>
+		<static-path url="/cma/static" localFolder="static"/>
+		<static-path url="/cma/resources" localFolder="resources"/>
+	</static-paths>
+	<content-types>
+	</content-types>
+	<content-generator
+		id="cma"
+		title="cma"
+		type="cma"
+		class="pt.webdetails.cpk.CpkContentGenerator"/>
+	<menu-items/>
+</plugin>

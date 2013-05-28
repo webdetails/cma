@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="logListQuery" type="kettle.TransFromFile">
+         <KtrFile>../endpoints/kettle/logParser.ktr</KtrFile>
+         <variables datarow-name="logFile" variable-name="MONDRIANLOG"/>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" cache="false" cacheDuration="3600" connection="logListQuery"
+               id="logListQuery"
+               type="kettle">
+      <Columns/>
+      <Parameters>
+         <Parameter default="" name="logFile" type="String"/>
+      </Parameters>
+      <Query>OUTPUT</Query>
+   </DataAccess>
+</CDADescriptor>
