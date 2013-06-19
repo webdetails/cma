@@ -15,5 +15,7 @@
         </elementType>
     </elementTypes> 
     <info>
+        <description>Community Mondrian Analyzer</description>
+        <name>CMA</name>
     </info>
 </cpk> 
