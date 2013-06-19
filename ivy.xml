@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-	<info organisation="not defined" module="cma" revision="${project.revision}"/>
+	<info organisation="" module="cma" revision="${project.revision}"/>
 	<configurations>
 		<conf name="default"/>
 		<conf name="source"/>
@@ -16,8 +16,11 @@
 		<artifact name="${ivy.artifact.id}" m:classifier="sources" type="source" ext="jar" conf="source"/>
 	</publications>
 	<dependencies defaultconf="runtime->default">
-		<dependency org="pentaho" name="cpf"
-			rev="TRUNK-SNAPSHOT" transitive="false" changing="true" conf='default->default'/>                   
+ 	<dependency org="pt.webdetails" name="cpf-core"
+		  rev="TRUNK-SNAPSHOT" transitive="false" changing="true" conf='default->default'/>
+  	<dependency org="pt.webdetails" name="cpf-pentaho"
+		  rev="TRUNK-SNAPSHOT" transitive="false" changing="true" conf='default->default'/>
+
 		<dependency org="org.codehaus.jackson" name="jackson-mapper-asl" rev="1.9.12" conf='default->default' />
   </dependencies>
 </ivy-module>
