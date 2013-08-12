@@ -1179,7 +1179,7 @@
      },
      {
       "name": "propertyValue",
-      "value": "/Users/gundisalwa/Pentaho/logs/mondrian.log.2013-05-26",
+      "value": "/Users/gundisalwa/Pentaho/logs/mondrian_stats.log",
       "type": "String"
      },
      {
@@ -1438,7 +1438,7 @@
      },
      {
       "name": "preExecution",
-      "value": "",
+      "value": "function (){ \n    if (!this.hasRunOnce){\n        _.extend(this, Backbone.Events);\n        this.hasRunOnce = true;\n    }\n}\n",
       "type": "JavaScript"
      },
      {
@@ -1509,16 +1509,6 @@
       "type": "JavaScript"
      },
      {
-      "name": "colTypes",
-      "value": "[\"date\",\"string\",\"numeric\",\"numeric\",\"numeric\",\"numeric\",\"numeric\"]",
-      "type": "colTypesCustom"
-     },
-     {
-      "name": "colFormats",
-      "value": "[]",
-      "type": "Array"
-     },
-     {
       "name": "colWidths",
       "value": "[]",
       "type": "Array"
@@ -1544,14 +1534,14 @@
       "type": "Array"
      },
      {
-      "name": "info",
-      "value": "false",
-      "type": "Boolean"
+      "name": "colTypes",
+      "value": "[\"date\",\"string\",\"numeric\",\"numeric\",\"numeric\",\"numeric\",\"numeric\"]",
+      "type": "colTypesCustom"
      },
      {
-      "name": "sort",
-      "value": "true",
-      "type": "Boolean"
+      "name": "colFormats",
+      "value": "[]",
+      "type": "Array"
      },
      {
       "name": "displayLength",
@@ -1575,6 +1565,16 @@
      },
      {
       "name": "filter",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "info",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "sort",
       "value": "true",
       "type": "Boolean"
      },
@@ -1787,12 +1787,12 @@
      },
      {
       "name": "variables",
-      "value": "[[\"logFile\",\"MONDRIANLOG\"]]",
+      "value": "[[\"logFile\",\"MONDRIANLOG\"],[\"logLimit\",\"LINELIMIT\"]]",
       "type": "ValuesArray"
      },
      {
       "name": "parameters",
-      "value": "[[\"logFile\",\"\",\"String\",\"\"]]",
+      "value": "[[\"logFile\",\"\",\"String\",\"\"],[\"logLimit\",\"1000000000\",\"String\",\"\"]]",
       "type": "CdaParameters"
      },
      {

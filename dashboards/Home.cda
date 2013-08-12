@@ -4,6 +4,7 @@
       <Connection id="logListQuery" type="kettle.TransFromFile">
          <KtrFile>../endpoints/kettle/logParser.ktr</KtrFile>
          <variables datarow-name="logFile" variable-name="MONDRIANLOG"/>
+         <variables datarow-name="logLimit" variable-name="LINELIMIT"/>
       </Connection>
    </DataSources>
    <DataAccess access="public" cache="false" cacheDuration="3600" connection="logListQuery"
@@ -12,6 +13,7 @@
       <Columns/>
       <Parameters>
          <Parameter default="" name="logFile" type="String"/>
+         <Parameter default="1000000000" name="logLimit" type="String"/>
       </Parameters>
       <Query>OUTPUT</Query>
    </DataAccess>
