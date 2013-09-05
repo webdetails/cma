@@ -3,4 +3,10 @@
 	<cde-styles>
 		<path>system/cma/resources/styles</path>
 	</cde-styles>
+  	<cde-datasources/>
+	<cde-components>
+	  <!-- paths from solution with cde component definitions to be loaded-->
+	  <path>system/cma/resources/components</path>
+	  <path>cma/components</path>
+	</cde-components>
 </settings>

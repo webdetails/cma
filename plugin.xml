@@ -17,5 +17,8 @@
 		title="CMA"
 		type="cma"
 		class="pt.webdetails.cpk.CpkContentGenerator"/>
-	<menu-items/>
+	<!-- Menu entry -->
+	<menu-items>
+		<menu-item id="cma_main" anchor="tools-submenu" label="CMA" command="content/cma/" type="MENU_ITEM" how="LAST_CHILD"/>
+	</menu-items>
 </plugin>
