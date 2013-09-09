@@ -15,6 +15,7 @@
         </elementType>
     </elementTypes> 
     <info>
+        <CPK_version>1</CPK_version>
         <description>Community Mondrian Analyzer</description>
         <name>CMA</name>
         <creation_date>2003-10-24</creation_date>
