@@ -1,8 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdf>
-        <title>Home</title>
-        <author></author>
-        <description>CMA Home Dashboard</description>
-        <icon/>
-		<style>cpk - (CMA)</style>
-<rendererType>blueprint</rendererType><widget>false</widget></cdf>
+<cdf><title>Mondrian Log Reader</title><description>Mondrian Log Reader</description><author></author><style>Clean</style><rendererType>blueprint</rendererType><widget>false</widget><widgetName></widgetName><widgetParameters></widgetParameters></cdf>
