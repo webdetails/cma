@@ -564,7 +564,7 @@
     <fields>
       <field>
         <name>datestr</name>
-        <type>Date</type>
+        <type>String</type>
         <format>yyyy-MM-dd HH&#x3a;mm&#x3a;ss,SSS</format>
         <group/>
         <decimal/>
