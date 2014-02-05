@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
 	<cde-styles>
-		<path>system/cma/resources/styles</path>
+		<path>system/mondrianLogReader/resources/styles</path>
 	</cde-styles>
   	<cde-datasources/>
 	<cde-components>
 	  <!-- paths from solution with cde component definitions to be loaded-->
-	  <path>system/cma/resources/components</path>
-	  <path>cma/components</path>
+	  <path>system/mondrianLogReader/resources/components</path>
+	  <path>mondrianLogReader/components</path>
 	</cde-components>
 </settings>

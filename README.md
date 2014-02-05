@@ -1,3 +1,3 @@
-cma
+mondrianLogReader
 ===
-Community Mondrian Analyzer
+

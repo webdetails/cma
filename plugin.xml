@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin title="cma" loader="DEFAULT">
+<plugin title="mondrianLogReader" loader="DEFAULT">
+<overlays>
+		<overlay id="startup.mondrianLogReader" resourcebundle="content/mondrianLogReader/resources/lang/messages">
+			<menubar id="toolsmenu">
+	        	<menuitem id="mondrianLogReader" label="${Launcher.mondrianLogReader}" command="mantleXulHandler.openUrl('${Launcher.mondrianLogReader}','${Launcher.mondrianLogReader_TOOLTIP}','plugin/mondrianLogReader/api/default')"/>
+	      	</menubar>
+	    </overlay>
+	</overlays>
 	<lifecycle-listener class="pt.webdetails.cpk.CpkLifecycleListener"/>
 	<static-paths>
-		<static-path url="/cma/static" localFolder="static"/>
-		<static-path url="/cma/resources" localFolder="resources"/>
+		<static-path url="/mondrianLogReader/static" localFolder="static"/>
+		<static-path url="/mondrianLogReader/resources" localFolder="resources"/>
 	</static-paths>
 	<content-types>
 		<content-type>
-			<title>CMA</title>
-			<description>Community Mondrian Analyzer</description>
+			<title>MondrianLogReader</title>
+			<description></description>
 			<company name="" url="" logo="@PLUGIN_COMPANY_LOGO@"></company>
 		</content-type>
 	</content-types>
 	<content-generator
-		id="cma"
-		title="CMA"
-		type="cma"
+		id="mondrianLogReader"
+		title="MondrianLogReader"
+		type="mondrianLogReader"
 		class="pt.webdetails.cpk.CpkContentGenerator"/>
 	<!-- Menu entry -->
 	<menu-items>
-		<menu-item id="cma_main" anchor="tools-submenu" label="CMA" command="content/cma/" type="MENU_ITEM" how="LAST_CHILD"/>
+		<!--<menu-item id="mondrianLogReader_main" anchor="tools-submenu" label="MondrianLogReader" command="content/mondrianLogReader/" type="MENU_ITEM" how="LAST_CHILD"/>-->
 	</menu-items>
 </plugin>
