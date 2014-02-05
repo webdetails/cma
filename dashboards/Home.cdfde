@@ -1169,7 +1169,7 @@
    {
     "id": "f14a8b9e-da92-2d95-7c55-b8de850aeb1c",
     "type": "ComponentsParameter",
-    "typeDesc": "Parameter",
+    "typeDesc": "Simple parameter",
     "parent": "GENERIC",
     "properties": [
      {
@@ -1197,7 +1197,7 @@
    {
     "id": "99513d48-cc45-b68c-058f-7a2ae7028fda",
     "type": "ComponentsParameter",
-    "typeDesc": "Parameter",
+    "typeDesc": "Simple parameter",
     "parent": "GENERIC",
     "properties": [
      {
@@ -1225,7 +1225,7 @@
    {
     "id": "e4424502-6c06-124d-9229-101c43131a7a",
     "type": "ComponentsParameter",
-    "typeDesc": "Parameter",
+    "typeDesc": "Simple parameter",
     "parent": "GENERIC",
     "properties": [
      {
@@ -1253,7 +1253,7 @@
    {
     "id": "dede4eeb-f4ac-65f5-c2ec-0b41aad9cdc3",
     "type": "ComponentsJavascriptParameter",
-    "typeDesc": "Custom Parameter",
+    "typeDesc": "Custom parameter",
     "parent": "GENERIC",
     "properties": [
      {
@@ -1265,6 +1265,11 @@
       "name": "javaScript",
       "value": "['mondrian.mdx' , 'mondrian.sql']",
       "type": "JavaScript"
+     },
+     {
+      "name": "parameterViewRole",
+      "value": "unused",
+      "type": "parameterViewRoleCustom"
      },
      {
       "name": "bookmarkable",
@@ -1392,7 +1397,7 @@
       "type": "Listeners"
      },
      {
-      "name": "xActionArrayParameter",
+      "name": "parameters",
       "value": "[]",
       "type": "ValuesArray"
      },
@@ -1509,22 +1514,12 @@
       "type": "JavaScript"
      },
      {
-      "name": "colWidths",
-      "value": "[]",
-      "type": "Array"
-     },
-     {
-      "name": "colSortable",
-      "value": "[]",
-      "type": "Array"
-     },
-     {
       "name": "expandParameters",
       "value": "[[\"7\",\"${p:statementParam}\"]]",
       "type": "ValuesArray"
      },
      {
-      "name": "xActionArrayParameter",
+      "name": "parameters",
       "value": "[[\"logFile\",\"logFileParam\"]]",
       "type": "ValuesArray"
      },
@@ -1544,14 +1539,14 @@
       "type": "Array"
      },
      {
-      "name": "displayLength",
-      "value": "20",
-      "type": "Integer"
+      "name": "colWidths",
+      "value": "[]",
+      "type": "Array"
      },
      {
-      "name": "lengthChange",
-      "value": "false",
-      "type": "Boolean"
+      "name": "colSortable",
+      "value": "[]",
+      "type": "Array"
      },
      {
       "name": "expandOnClick",
@@ -1576,6 +1571,16 @@
      {
       "name": "sort",
       "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "displayLength",
+      "value": "20",
+      "type": "Integer"
+     },
+     {
+      "name": "lengthChange",
+      "value": "false",
       "type": "Boolean"
      },
      {
@@ -1674,7 +1679,7 @@
       "type": "OptionArray"
      },
      {
-      "name": "cccClickAction",
+      "name": "clickAction",
       "value": "",
       "type": "JavaScript"
      }
@@ -1743,91 +1748,36 @@
  "datasources": {
   "rows": [
    {
-    "id": "KETTLE",
-    "name": "KETTLE Queries",
+    "id": "MONDRIANLOGREADER_CPKENDPOINTS",
+    "name": "MONDRIANLOGREADER Endpoints",
     "type": "Label",
     "typeDesc": "<i>Group</i>",
     "parent": "UnIqEiD",
     "properties": [
      {
       "name": "Group",
-      "value": "KETTLE Queries",
+      "value": "MONDRIANLOGREADER Endpoints",
       "type": "Label"
      }
     ]
    },
    {
-    "id": "432af61e-da6f-17dc-86f9-72a0257fb1c6",
-    "type": "Componentskettle_kettleTransFromFile",
-    "typeDesc": "kettle over kettleTransFromFile",
-    "meta": "CDA",
-    "meta_conntype": "kettle.TransFromFile",
-    "meta_datype": "kettle",
-    "parent": "KETTLE",
+    "id": "6744351f-d68a-a991-fd3d-30e3c7cd1903",
+    "type": "ComponentsmondrianLogReader_getLog_CPKENDPOINT",
+    "typeDesc": "getLog Endpoint",
+    "parent": "MONDRIANLOGREADER_CPKENDPOINTS",
     "properties": [
      {
       "name": "name",
       "value": "logListQuery",
       "type": "Id"
-     },
-     {
-      "name": "ktrFile",
-      "value": "../endpoints/kettle/logParser.ktr",
-      "type": "KtrPath"
-     },
-     {
-      "name": "access",
-      "value": "public",
-      "type": "Access"
-     },
-     {
-      "name": "query",
-      "value": "OUTPUT",
-      "type": "SqlQuery"
-     },
-     {
-      "name": "variables",
-      "value": "[[\"logFile\",\"MONDRIANLOG\"],[\"logLimit\",\"LINELIMIT\"]]",
-      "type": "ValuesArray"
-     },
-     {
-      "name": "parameters",
-      "value": "[[\"logFile\",\"\",\"String\",\"\"],[\"logLimit\",\"1000000000\",\"String\",\"\"]]",
-      "type": "CdaParameters"
-     },
-     {
-      "name": "output",
-      "value": "[]",
-      "type": "IndexArray"
-     },
-     {
-      "name": "outputMode",
-      "value": "include",
-      "type": "OutputMode"
-     },
-     {
-      "name": "cdacolumns",
-      "value": "[]",
-      "type": "CdaColumnsArray"
-     },
-     {
-      "name": "cdacalculatedcolumns",
-      "value": "[]",
-      "type": "CdaCalculatedColumnsArray"
-     },
-     {
-      "name": "cacheDuration",
-      "value": "3600",
-      "type": "Integer"
-     },
-     {
-      "name": "cache",
-      "value": "false",
-      "type": "Boolean"
      }
-    ]
+    ],
+    "meta": "CPK",
+    "meta_pluginId": "mondrianLogReader",
+    "meta_endpoint": "getLog"
    }
   ]
  },
- "filename": "/system/cma/dashboards/Home.cdfde"
+ "filename": "/system/mondrianLogReader/dashboards/Home.cdfde"
 }
