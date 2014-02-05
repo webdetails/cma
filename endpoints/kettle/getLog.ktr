@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>logParser</name>
+    <name>getLog</name>
     <description/>
     <extended_description/>
     <trans_version/>
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
-    <directory>&#47;</directory>
+    <directory>&#x2f;</directory>
     <parameters>
         <parameter>
-            <name>LINELIMIT</name>
+            <name>_lineLimit</name>
             <default_value>1024</default_value>
             <description/>
         </parameter>
         <parameter>
-            <name>MONDRIANLOG</name>
-            <default_value/>
+            <name>_logFilePath</name>
+            <default_value>&#x2f;Users&#x2f;gundisalwa&#x2f;mondrian.log</default_value>
             <description/>
         </parameter>
     </parameters>
@@ -27,7 +27,7 @@
 <size_limit_lines/>
 <interval/>
 <timeout_days/>
-<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
 <perf-log-table><connection/>
 <schema/>
 <table/>
@@ -44,6 +44,11 @@
 <table/>
 <timeout_days/>
 <field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
     </log>
     <maxdate>
       <connection/>
@@ -72,15 +77,13 @@
     <clusterschemas>
     </clusterschemas>
   <created_user>-</created_user>
-  <created_date>2012&#47;09&#47;03 13:29:46.194</created_date>
+  <created_date>2012&#x2f;09&#x2f;03 13&#x3a;29&#x3a;46.194</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2012&#47;09&#47;03 13:29:46.194</modified_date>
+  <modified_date>2012&#x2f;09&#x2f;03 13&#x3a;29&#x3a;46.194</modified_date>
   </info>
   <notepads>
     <notepad>
-      <note>TODO LIST: 
-* Get regexp from file &#47; param?
-* Support other date patterns</note>
+      <note>TODO LIST&#x3a; &#xa;&#x2a; Get regexp from file &#x2f; param&#x3f;&#xa;&#x2a; Support other date patterns</note>
       <xloc>30</xloc>
       <yloc>104</yloc>
       <width>189</width>
@@ -101,13 +104,56 @@
       <drawshadow>Y</drawshadow>
     </notepad>
   </notepads>
+  <connection>
+    <name>AgileBI</name>
+    <server>localhost</server>
+    <type>MONETDB</type>
+    <access>Native</access>
+    <database>pentaho-instaview</database>
+    <port>50006</port>
+    <username>monetdb</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb14a17edb86abd8</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <read_only>true</read_only>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_INFOBRIGHT.characterEncoding</code><attribute>UTF-8</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>50006</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+    </attributes>
+  </connection>
   <order>
-  <hop> <from>Regex Evaluation</from><to>Stream lookup</to><enabled>Y</enabled> </hop>  <hop> <from>Inclusion classes</from><to>Stream lookup</to><enabled>Y</enabled> </hop>  <hop> <from>Stream lookup</from><to>Filter rows</to><enabled>Y</enabled> </hop>  <hop> <from>Statement &#47; Exec &#47; Fetch</from><to>Exec</to><enabled>Y</enabled> </hop>  <hop> <from>Statement &#47; Exec &#47; Fetch</from><to>Exec+Fetch</to><enabled>Y</enabled> </hop>  <hop> <from>Statement &#47; Exec &#47; Fetch</from><to>Statement</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows</from><to>Statement &#47; Exec &#47; Fetch</to><enabled>Y</enabled> </hop>  <hop> <from>Merge Join</from><to>Merge Join 2</to><enabled>Y</enabled> </hop>  <hop> <from>Merge Join 2</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>Statement</from><to>Sort rows</to><enabled>Y</enabled> </hop>  <hop> <from>Sort rows</from><to>Merge Join</to><enabled>Y</enabled> </hop>  <hop> <from>Exec</from><to>Sort rows 2</to><enabled>Y</enabled> </hop>  <hop> <from>Sort rows 2</from><to>Merge Join</to><enabled>Y</enabled> </hop>  <hop> <from>Exec+Fetch</from><to>Sort rows 3</to><enabled>Y</enabled> </hop>  <hop> <from>Sort rows 3</from><to>Merge Join 2</to><enabled>Y</enabled> </hop>  <hop> <from>Mondrian log</from><to>Join multiple lines</to><enabled>Y</enabled> </hop>  <hop> <from>Join multiple lines</from><to>Regex Evaluation</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>Sort by time</to><enabled>Y</enabled> </hop>  <hop> <from>Sort by time</from><to>Fix times</to><enabled>Y</enabled> </hop>  <hop> <from>Fix times</from><to>OUTPUT</to><enabled>Y</enabled> </hop>  </order>
+  <hop> <from>Regex Evaluation</from><to>Stream lookup</to><enabled>Y</enabled> </hop>
+  <hop> <from>Inclusion classes</from><to>Stream lookup</to><enabled>Y</enabled> </hop>
+  <hop> <from>Stream lookup</from><to>Filter rows</to><enabled>Y</enabled> </hop>
+  <hop> <from>Statement &#x2f; Exec &#x2f; Fetch</from><to>Exec</to><enabled>Y</enabled> </hop>
+  <hop> <from>Statement &#x2f; Exec &#x2f; Fetch</from><to>Exec&#x2b;Fetch</to><enabled>Y</enabled> </hop>
+  <hop> <from>Statement &#x2f; Exec &#x2f; Fetch</from><to>Statement</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows</from><to>Statement &#x2f; Exec &#x2f; Fetch</to><enabled>Y</enabled> </hop>
+  <hop> <from>Merge Join</from><to>Merge Join 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Merge Join 2</from><to>Select values</to><enabled>Y</enabled> </hop>
+  <hop> <from>Statement</from><to>Sort rows</to><enabled>Y</enabled> </hop>
+  <hop> <from>Sort rows</from><to>Merge Join</to><enabled>Y</enabled> </hop>
+  <hop> <from>Exec</from><to>Sort rows 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Sort rows 2</from><to>Merge Join</to><enabled>Y</enabled> </hop>
+  <hop> <from>Exec&#x2b;Fetch</from><to>Sort rows 3</to><enabled>Y</enabled> </hop>
+  <hop> <from>Sort rows 3</from><to>Merge Join 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Mondrian log</from><to>Join multiple lines</to><enabled>Y</enabled> </hop>
+  <hop> <from>Join multiple lines</from><to>Regex Evaluation</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values</from><to>Sort by time</to><enabled>Y</enabled> </hop>
+  <hop> <from>Sort by time</from><to>Fix times</to><enabled>Y</enabled> </hop>
+  <hop> <from>Fix times</from><to>OUTPUT</to><enabled>Y</enabled> </hop>
+  </order>
   <step>
     <name>Exec</name>
     <type>RegexEval</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -160,10 +206,11 @@
     </step>
 
   <step>
-    <name>Exec+Fetch</name>
+    <name>Exec&#x2b;Fetch</name>
     <type>RegexEval</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -232,6 +279,7 @@
     <type>FilterRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -253,7 +301,7 @@
    <negated>N</negated>
    <operator>AND</operator>
    <leftvalue>result</leftvalue>
-   <function>=</function>
+   <function>&#x3d;</function>
    <rightvalue/>
    <value><name>constant</name><type>Boolean</type><text>Y</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value>   </condition>
   </conditions>
@@ -272,20 +320,21 @@
     <type>Janino</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
            <schema_name/>
            </partitioning>
        <formula><field_name>totalTime</field_name>
-<formula_string>totalTime==null?executionTime:totalTime</formula_string>
+<formula_string>totalTime&#x3d;&#x3d;null&#x3f;executionTime&#x3a;totalTime</formula_string>
 <value_type>Integer</value_type>
 <value_length>-1</value_length>
 <value_precision>-1</value_precision>
 <replace_field>totalTime</replace_field>
 </formula>
        <formula><field_name>fetchTime</field_name>
-<formula_string>fetchTime==null||executionTime==null?new Long(0L):new Long(totalTime-executionTime)</formula_string>
+<formula_string>fetchTime&#x3d;&#x3d;null&#x7c;&#x7c;executionTime&#x3d;&#x3d;null&#x3f;new Long&#x28;0L&#x29;&#x3a;new Long&#x28;totalTime-executionTime&#x29;</formula_string>
 <value_type>Integer</value_type>
 <value_length>-1</value_length>
 <value_precision>-1</value_precision>
@@ -304,6 +353,7 @@
     <type>DataGrid</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -319,6 +369,7 @@
         <group/>
         <length>-1</length>
         <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
     </fields>
     <data>
@@ -338,6 +389,7 @@
     <type>ScriptValueMod</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -347,72 +399,13 @@
     <optimizationLevel>9</optimizationLevel>
     <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
         <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>
-if (line &amp;&amp; line.match(&#47;^\d{4}-\d{2}-\d{2} \d\d:\d\d:\d\d,\d{3} [A-Z]+.*&#47;)){
-
-	&#47;&#47;writeToLog(&quot;m&quot;,&quot;Line: &quot; + lineno);
-
-	if(isFirst){
-		isFirst = false;
-	}
-	else{
-
-		&#47;&#47; Flush the line, send it
-		if(accLine.length &gt; lineLimit){
-			accLine = accLine.substr(0,lineLimit - 3) + &quot;...&quot;;
-		}
-
-	    newRow = createRowCopy(getOutputRowMeta().size());
-	    newRow[0] = accLine;	
-	    putRow(newRow);
-	}
-
-	isLarge = false;
-    accLine = line;
-
-}
-else{
-
-	if(isLarge){
-		&#47;&#47; skip
-	}
-	else{
-		accLine += line;
-		if(accLine.length &gt; lineLimit){
-			accLine = accLine.substr(0,lineLimit - 3) + &quot;...&quot;;
-			isLarge = true;
-		}
-	}
-}
-
-trans_Status = SKIP_TRANSFORMATION;
-		</jsScript_script>
+        <jsScript_script>&#xa;if &#x28;line &#x26;&#x26; line.match&#x28;&#x2f;&#x5e;&#x5c;d&#x7b;4&#x7d;-&#x5c;d&#x7b;2&#x7d;-&#x5c;d&#x7b;2&#x7d; &#x5c;d&#x5c;d&#x3a;&#x5c;d&#x5c;d&#x3a;&#x5c;d&#x5c;d,&#x5c;d&#x7b;3&#x7d; &#x5b;A-Z&#x5d;&#x2b;.&#x2a;&#x2f;&#x29;&#x29;&#x7b;&#xa;&#xa;	&#x2f;&#x2f;writeToLog&#x28;&#x22;m&#x22;,&#x22;Line&#x3a; &#x22; &#x2b; lineno&#x29;&#x3b;&#xa;&#xa;	if&#x28;isFirst&#x29;&#x7b;&#xa;		isFirst &#x3d; false&#x3b;&#xa;	&#x7d;&#xa;	else&#x7b;&#xa;&#xa;		&#x2f;&#x2f; Flush the line, send it&#xa;		if&#x28;accLine.length &#x3e; lineLimit&#x29;&#x7b;&#xa;			accLine &#x3d; accLine.substr&#x28;0,lineLimit - 3&#x29; &#x2b; &#x22;...&#x22;&#x3b;&#xa;		&#x7d;&#xa;&#xa;	    newRow &#x3d; createRowCopy&#x28;getOutputRowMeta&#x28;&#x29;.size&#x28;&#x29;&#x29;&#x3b;&#xa;	    newRow&#x5b;0&#x5d; &#x3d; accLine&#x3b;	&#xa;	    putRow&#x28;newRow&#x29;&#x3b;&#xa;	&#x7d;&#xa;&#xa;	isLarge &#x3d; false&#x3b;&#xa;    accLine &#x3d; line&#x3b;&#xa;&#xa;&#x7d;&#xa;else&#x7b;&#xa;&#xa;	if&#x28;isLarge&#x29;&#x7b;&#xa;		&#x2f;&#x2f; skip&#xa;	&#x7d;&#xa;	else&#x7b;&#xa;		accLine &#x2b;&#x3d; line&#x3b;&#xa;		if&#x28;accLine.length &#x3e; lineLimit&#x29;&#x7b;&#xa;			accLine &#x3d; accLine.substr&#x28;0,lineLimit - 3&#x29; &#x2b; &#x22;...&#x22;&#x3b;&#xa;			isLarge &#x3d; true&#x3b;&#xa;		&#x7d;&#xa;	&#x7d;&#xa;&#x7d;&#xa;&#xa;trans_Status &#x3d; SKIP_TRANSFORMATION&#x3b;&#xa;		</jsScript_script>
       </jsScript>      <jsScript>        <jsScript_type>1</jsScript_type>
         <jsScript_name>Item_0</jsScript_name>
-        <jsScript_script>&#47;&#47;Script here
-
-var isFirst = true;
-var accLine = &quot;&quot;;
-var isLarge = false;
-var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
-
-
-
-
-
-
-
-
-</jsScript_script>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xa;&#xa;var isFirst &#x3d; true&#x3b;&#xa;var accLine &#x3d; &#x22;&#x22;&#x3b;&#xa;var isLarge &#x3d; false&#x3b;&#xa;var lineLimit &#x3d; getVariable&#x28;&#x22;_lineLimit&#x22;,1024&#x29;&#x3b;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;</jsScript_script>
       </jsScript>      <jsScript>        <jsScript_type>2</jsScript_type>
         <jsScript_name>Item_1</jsScript_name>
-        <jsScript_script>&#47;&#47; Flushing!
-
-	    newRow = createRowCopy(getOutputRowMeta().size());
-	    newRow[0] = accLine;	
-	    putRow(newRow);
-
-</jsScript_script>
+        <jsScript_script>&#x2f;&#x2f; Flushing&#x21;&#xa;&#xa;	    newRow &#x3d; createRowCopy&#x28;getOutputRowMeta&#x28;&#x29;.size&#x28;&#x29;&#x29;&#x3b;&#xa;	    newRow&#x5b;0&#x5d; &#x3d; accLine&#x3b;	&#xa;	    putRow&#x28;newRow&#x29;&#x3b;&#xa;&#xa;</jsScript_script>
       </jsScript>    </jsScripts>    <fields>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>175</xloc>
@@ -426,6 +419,7 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
     <type>MergeJoin</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -455,6 +449,7 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
     <type>MergeJoin</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -484,16 +479,17 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
     <type>CsvInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <filename>${MONDRIANLOG}</filename>
+    <filename>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x2f;mondrian.log</filename>
     <filename_field/>
     <rownum_field>lineno</rownum_field>
     <include_filename>N</include_filename>
-    <separator>!@#$%*</separator>
+    <separator>&#x21;&#x40;&#x23;&#x24;&#x25;&#x2a;</separator>
     <enclosure/>
     <header>N</header>
     <buffer_size>50000</buffer_size>
@@ -528,6 +524,7 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
     <type>Dummy</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -546,6 +543,7 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
     <type>RegexEval</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -567,7 +565,7 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
       <field>
         <name>datestr</name>
         <type>Date</type>
-        <format>yyyy-MM-dd HH:mm:ss,SSS</format>
+        <format>yyyy-MM-dd HH&#x3a;mm&#x3a;ss,SSS</format>
         <group/>
         <decimal/>
         <length>-1</length>
@@ -626,6 +624,7 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -677,12 +676,13 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
            <schema_name/>
            </partitioning>
-      <directory>%%java.io.tmpdir%%</directory>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
       <prefix>out</prefix>
       <sort_size>1000000</sort_size>
       <free_memory/>
@@ -694,6 +694,7 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
         <name>datestr</name>
         <ascending>N</ascending>
         <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
       </field>
     </fields>
      <cluster_schema/>
@@ -709,12 +710,13 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
            <schema_name/>
            </partitioning>
-      <directory>%%java.io.tmpdir%%</directory>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
       <prefix>out</prefix>
       <sort_size>1000000</sort_size>
       <free_memory/>
@@ -726,11 +728,13 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
         <name>class</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
       </field>
       <field>
         <name>statementId</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
       </field>
     </fields>
      <cluster_schema/>
@@ -746,12 +750,13 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
            <schema_name/>
            </partitioning>
-      <directory>%%java.io.tmpdir%%</directory>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
       <prefix>out</prefix>
       <sort_size>1000000</sort_size>
       <free_memory/>
@@ -763,11 +768,13 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
         <name>class</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
       </field>
       <field>
         <name>statementId</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
       </field>
     </fields>
      <cluster_schema/>
@@ -783,12 +790,13 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
            <schema_name/>
            </partitioning>
-      <directory>%%java.io.tmpdir%%</directory>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
       <prefix>out</prefix>
       <sort_size>1000000</sort_size>
       <free_memory/>
@@ -800,11 +808,13 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
         <name>class</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
       </field>
       <field>
         <name>statementId</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
       </field>
     </fields>
      <cluster_schema/>
@@ -820,6 +830,7 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
     <type>RegexEval</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -872,10 +883,11 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
     </step>
 
   <step>
-    <name>Statement &#47; Exec &#47; Fetch</name>
+    <name>Statement &#x2f; Exec &#x2f; Fetch</name>
     <type>SwitchCase</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -888,11 +900,11 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
 <case_value_decimal/>
 <case_value_group/>
 <default_target_step>Statement</default_target_step>
-<cases><case><value>exec+fetch</value>
-<target_step>Exec+Fetch</target_step>
+<cases><case><value>exec&#x2b;fetch</value>
+<target_step>Exec&#x2b;Fetch</target_step>
 </case><case><value>, exec </value>
 <target_step>Exec</target_step>
-</case><case><value>: exec: </value>
+</case><case><value>&#x3a; exec&#x3a; </value>
 <target_step>Exec</target_step>
 </case></cases>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
@@ -907,6 +919,7 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
     <type>StreamLookup</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -926,7 +939,7 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
         <name>classes</name>
         <rename>classes</rename>
         <default/>
-        <type>-</type>
+        <type>None</type>
       </value>
     </lookup>
      <cluster_schema/>
@@ -942,4 +955,11 @@ var lineLimit = getVariable(&quot;LINELIMIT&quot;,1024);
    <slave-step-copy-partition-distribution>
 </slave-step-copy-partition-distribution>
    <slave_transformation>N</slave_transformation>
+<attributes><group><name>DataService</name>
+<attribute><key>name</key>
+<value/>
+</attribute><attribute><key>stepname</key>
+<value/>
+</attribute></group></attributes>
+
 </transformation>
