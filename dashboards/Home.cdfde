@@ -1156,7 +1156,7 @@
      },
      {
       "name": "valuesArray",
-      "value": "[[\".*\",\"All\"],[\"sql\",\"Mondrian.sql\"],[\"mdx\",\"Mondrian.mdx\"]]",
+      "value": "[[\".*\",\"All\"],[\"sql\",\"Mondrian<span>.sql</span>\"],[\"mdx\",\"Mondrian<span>.mdx</span>\"]]",
       "type": "ValuesArray"
      },
      {
