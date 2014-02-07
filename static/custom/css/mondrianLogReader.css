@@ -20,7 +20,7 @@
  *    Other 
  *    Project Specific Items  
  *
-*/
+ */
 /* =============================================================================
    Fonts
    ========================================================================== */
@@ -33,20 +33,20 @@
 
 
 .container {
-  position: relative;
-  padding: 10px 30px 30px 30px;
-  border:solid 1px #CBDEE8;
-  margin-bottom: 30px;
+    position: relative;
+    padding: 10px 30px 30px 30px;
+    border:solid 1px #CBDEE8;
+    margin-bottom: 30px;
 }
 
 .container:before {
-  content:"";
-  width: 230px;
-  height: 4px;
-  background: #FFCE46;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+    content:"";
+    width: 230px;
+    height: 4px;
+    background: #FFCE46;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 
@@ -55,22 +55,126 @@
    ========================================================================== */
 
 .pluginHeader{
-  border-bottom: solid 1px #CBDEE8;
-  height:40px;
-  padding-bottom:10px;
-  line-height:30px;
+    border-bottom: solid 1px #CBDEE8;
+    height:40px;
+    padding-bottom:10px;
+    line-height:30px;
 }
 .pluginTitle{
-  font-size:16px;
-  color:#323E47;
+    font-size:16px;
+    color:#323E47;
 }
 
 /* =============================================================================
    3. FILTER CELLS
    ========================================================================== */
+.filterCell {
+    margin-top:20px;
+    height:35px;
+    line-height:35px;
+}
+.filterCell > * {
+    display: inline-block;
+}
+
+.filterCell .filterLabel {
+    font-size:12px;
+    color: #7592A4;
+    float:left;
+    padding-right: 15px;
+}
+
+
+.filterCell .classFilter {
+    height:100%;
+}
+.filterCell .classFilter div {
+    height:100%;
+}
+
+.filterCell .pentaho-toggle-button {
+    height:100%;
+    width:130px;
+    font-size:12px;
+    display:inline-block;
+    margin-left:-1px;
+
+}
+
+.filterCell .pentaho-toggle-button button {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height:100%;
+    width:100%;
+    padding:0px;
+    margin:0px;
+    background:none;
+    display:inline-block;
+    border:solid 1px #CFE1EA;
+    cursor: pointer;
+    color: #919191;
+    position: relative;
+}
+
+.filterCell .pentaho-toggle-button button:hover{
+    border-color: #00619D;
+    z-index:10;
+}
+
+.filterCell .pentaho-toggle-button.pentaho-toggle-button-down button {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #00619D;
+    color: #00619D;
+    z-index:20;
+
+    font-weight: bold;
+}
+
+.filterCell .pentaho-toggle-button.pentaho-toggle-button-down span.sql {
+    color: #00AA67;
+}
+
+.filterCell .pentaho-toggle-button.pentaho-toggle-button-down span.mdx {
+    color: #009BBD;
+}
+
 /* =============================================================================
    4. DATA CELLS
    ========================================================================== */
+
+.dataCell table {
+    border-collapse: collapse;
+}
+
+.dataCell tr.odd,
+.dataCell tr.even {
+    background: none;
+    height: 35px;
+}
+
+.dataCell tr.odd:hover,
+.dataCell tr.even:hover {
+    background: #CFE1EA;
+    cursor: pointer;
+}
+
+
+.dataCell td {
+    border-width: 1px;
+    border-color: #CFE1EA;
+    border-style: solid none;
+}
+.dataCell td:first-child {
+    border-left-style:solid;
+}
+.dataCell td:last-child {
+    border-right-style:solid;
+}
+
+.data
+
+
 /* =============================================================================
    5. TABLES
    ========================================================================== */
