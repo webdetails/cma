@@ -1323,7 +1323,7 @@
      },
      {
       "name": "filter",
-      "value": "false",
+      "value": "true",
       "type": "Boolean"
      },
      {
