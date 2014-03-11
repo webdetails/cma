@@ -32,7 +32,8 @@
     <copy todir="${stage.dir}/${plugin.name}/" overwrite="true">
       <fileset dir=".">
         <include name="**/*"/>
-		  <exclude name="bin/"/>
+		    <exclude name="bin/"/>
+        <exclude name="documentation/mockups/"/>
       </fileset>
     </copy>
     <!-- create the version file -->
